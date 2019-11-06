@@ -3,12 +3,14 @@ module.exports = {
         '@vue/cli-plugin-babel/preset'
     ],
     plugins: [
-        [
-            "component",
-            {
+        ["component", {
                 "libraryName": "mint-ui",
                 "style": true
-            }
-        ]
+            }],
+        ["import", {
+            "libraryName": "muse-ui",
+            "libraryDirectory": "lib",
+            "camel2DashComponentName": false
+        }]
     ]
 };
